@@ -1,0 +1,48 @@
+.turnScreen{
+    width: 100vw;
+    height: 100vh;
+    background-color: #114E9F;
+    z-index: 1000;
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 59px;
+
+    text-align: center;
+
+    color: #FFFFFF;
+    display: none;
+}
+
+@keyframes example {
+    from {transform: rotate(90deg);}
+    to {transform: rotate(0deg);}
+}
+
+.iconCell{
+    font-size: 100px;
+    transform: rotate(90deg);
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.turnScreen h1{
+    width: 90%;
+}
+
+
+
+
+/* Celular deitado */
+@media (max-height: 450px) and (orientation: landscape) {
+    .turnScreen{
+        display: flex;
+    }
+}

@@ -1,9 +1,9 @@
 import React from 'react';
 
-// import { Container } from './styles';
+import './About.css';
 
 function About() {
-  return <h1>Sobre</h1>;
+  return <h1 className="texth1">Sobre</h1>;
 }
 
 export default About;
