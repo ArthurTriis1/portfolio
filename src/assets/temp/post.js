@@ -1,10 +1,10 @@
-
+import image from '../../assets/temp/preservpost.png'
 const project =  {
         "id": 1,
         "title": "Nome do Aplicativo",
         "access": "http://www.link.com",
         "repository": "github.com",
-        "image": "/static/media/preservpost.47fe4194.png",
+        "image": image,
         "description": "Descrição detalhada no aplicativo",
         "created_at": "2020-06-28T04:22:50.026Z",
         "updated_at": "2020-06-28T04:22:50.026Z",
@@ -18,14 +18,14 @@ const project =  {
                                     "paragraph": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
                                     "image": [ 
                                         {
-                                            "image": "/static/media/preservpost.47fe4194.png", 
+                                            "image": image, 
                                             "title": "Titulo padrão",
                                             "subtitle": "subtitulo padrão"
                                             
                                         },
 
                                         {
-                                            "image": "/static/media/preservpost.47fe4194.png", 
+                                            "image": image, 
                                             "title": "Titulo padrão",
                                             "subtitle": "subtitulo padrão"
                                             
@@ -37,12 +37,12 @@ const project =  {
                                     "paragraph": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
                                     "image": [ 
                                         {
-                                            "image": "/static/media/preservpost.47fe4194.png", 
+                                            "image": image, 
                                             "subtitle": "subtitulo padrão"
                                             
                                         },
                                         {
-                                            "image": "/static/media/preservpost.47fe4194.png", 
+                                            "image": image, 
                                             "title": "Titulo padrão"
                                         }
                                     ]
@@ -58,7 +58,7 @@ const project =  {
                                     "paragraph": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
                                     "image": [
                                         {
-                                            "image": "/static/media/preservpost.47fe4194.png", 
+                                            "image": image, 
                                             "title": "Titulo padrão",
                                             "subtitle": "subtitulo padrão"
                                             
@@ -70,7 +70,7 @@ const project =  {
                                     "paragraph": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
                                     "image": [ 
                                         {
-                                            "image": "/static/media/preservpost.47fe4194.png", 
+                                            "image": image, 
                                             "title": "Titulo padrão",
                                             "subtitle": "subtitulo padrão"
                                             

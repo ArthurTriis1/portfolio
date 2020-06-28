@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+//import { useParams } from 'react-router-dom';
 import InfoContainer from '../../Components/InfoContainer';
 import TagsWrap from '../../Components/TagsWrap';
 import { project } from '../../assets/temp/post.js';
@@ -9,7 +9,7 @@ import './Project.css';
 function Project() {
 
     const [ post, setPost ] = useState({});
-    const { id } = useParams();
+    //const { id } = useParams();
 
 
     useEffect(() => {
