@@ -1,41 +1,20 @@
 import React from 'react';
 
- import './PostSpan.css';
+import './PostSpan.css';
+import TagsWrap from '../TagsWrap';
 
-function PostSpan({ image }) {
+function PostSpan({ image, tags, title, description }) {
 
-    const tags = [
-        {
-            name: "React",
-            color: "#F3212E"
-        },
-
-        {
-            name: "VUE",
-            color: "#7AC141"
-        },
-
-        {
-            name: "Bot",
-            color: "#114E9F"
-        },
-
-    ]
+    
 
     return (
         <article className="PostSpan" style={{backgroundImage: `url(${image})`}}>
             <div className="backgroundFilter"></div>
-            <div className="wrapTags">
-                {
-                    tags.map((tag, index) => (
-                        <div key={index} style={{backgroundColor: tag.color}} className="Tag">{tag.name}</div>
-                    ))
-                }
-            </div>
-
+            
+            {tags && <TagsWrap tags={tags} />}
             <div className="wrapTitles">
-                <h3 className="postTitle">Preserv</h3>
-                <h4 className="postSubtitle">Localize preservativos e serviços proximos a você</h4>
+                <h3 className="postTitle">{title}</h3>
+            <h4 className="postSubtitle">{description}</h4>
             </div>
         </article>
     )

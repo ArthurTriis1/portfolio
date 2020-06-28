@@ -1,6 +1,7 @@
 import React from 'react';
 import InfoContainer from '../../Components/InfoContainer';
 import ColabSpan from '../../Components/ColabSpan';
+
 import './Colab.css';
 import hackathon from '../../assets/temp/hackathon.png'
 import grendes from '../../assets/temp/grendes.jpeg'
@@ -10,11 +11,12 @@ function Colab() {
     return (
         <section className="containerColab">
             <InfoContainer
-            title="Colabs"
-            text="Aqui são algumas participações em eventos, lives e trabalhos por aí. Espero que goste!"
+                title="Colabs"
+                text="Aqui são algumas participações em eventos, lives e trabalhos por aí. Espero que goste! (Clique e saiba mais)"
             />
             <div className="colabsWrap">
                 <ColabSpan
+                    href="http://google.com"
                     image={hackathon}
                     title="Hackathon CCR"
                     type="Evento"

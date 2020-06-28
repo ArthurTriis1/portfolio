@@ -1,0 +1,20 @@
+.wrapTags{
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+}
+
+.Tag{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    width: 70px;
+    padding: 3px 2px;
+    margin: 0 2px;
+    box-shadow: 1px 1px 2px 0px #3d3d3dad;
+  
+}

@@ -17,6 +17,7 @@
 
 .PostSpan:hover{
     cursor: pointer;
+    
 }
 .backgroundFilter{
     position: absolute;
@@ -30,6 +31,7 @@
 .PostSpan:hover .backgroundFilter{
     background: linear-gradient(180deg, rgba(2,0,36,0) 0%, rgba(9,9,121,0) 69%, rgba(0,0,0,0.5802696078431373) 100%);
     z-index: 0;
+    
 }
 
 @media (max-width: 800px){
@@ -56,26 +58,7 @@
     
 }
 
-.wrapTags{
-    display: flex;
-    flex-direction: row;
-    z-index: 1;
-}
 
-.Tag{
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 15px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    width: 70px;
-    padding: 3px 2px;
-    margin: 0 2px;
-    box-shadow: 1px 1px 2px 0px #3d3d3dad;
-  
-}
 
 .wrapTitles{
     z-index: 1;

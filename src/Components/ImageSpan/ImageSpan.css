@@ -1,0 +1,33 @@
+.imageWrap{
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 5px;
+    border-radius: 10px;
+    color: #114E9F;
+    font-family: Montserrat;
+    font-style: normal;
+    text-align: center;
+
+}
+
+.imageWrap img{
+    max-height: 300px;
+    max-width: 80%;
+    border: 5px solid #114E9F;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 1px 1px 5px #000;
+}
+
+.imageWrap h3{
+    font-weight: 900;
+    font-size: 22px;
+}
+
+.imageWrap h4{
+    font-weight: normal;
+    font-size: 18px;
+}
