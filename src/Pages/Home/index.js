@@ -5,7 +5,7 @@ import image from '../../assets/temp/preservpost.png'
 
 function Home() {
     return (
-        <section className="listPosts">
+        <section className="containerHome">
             <PostSpan image={image}/>
             <PostSpan image={image}/>
             <PostSpan image={image}/>

@@ -5,12 +5,18 @@ import './InfoContainer.css';
 function InfoContainer({ title, text}) {
     return (
         <div className="infoContainer">
-            <h1 className="infoTitle">{title}</h1>
-            <ReactMarkdown
-                className="infoText"
-                source={text}
-                escapeHtml={false}
-            />
+            {
+                title &&
+                <h1 className="infoTitle">{title}</h1>
+            }
+            {
+                text &&
+                <ReactMarkdown
+                    className="infoText"
+                    source={text}
+                    escapeHtml={false}
+                />
+            }
         </div>
     )
 }
