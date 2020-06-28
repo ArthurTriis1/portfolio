@@ -1,0 +1,50 @@
+.infoContainer{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.infoContainer:first-child{
+    margin-top: 0px;
+}
+
+
+.infoTitle{
+    padding: 5px 10px;
+    width: min-content;
+    background: #114E9F;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+
+    text-align: center;
+
+    margin-left: 15px;
+    color: #FFFFFF;
+
+    text-transform: uppercase;
+}
+
+.infoText{
+    background: #FFFFFF;
+    padding: 10px;
+    margin-top: 20px;
+    font-family: Montserrat;
+    line-height: 30px;
+    width: 100%;
+    color: #114E9F;
+}
+
+.infoText p{
+    font-size: 20px;
+    text-align: justify;
+}
+
+.infoText ul{
+	padding-left: 20px;
+}
+
+
+

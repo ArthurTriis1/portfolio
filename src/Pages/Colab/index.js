@@ -1,9 +1,11 @@
 import React from 'react';
 
-// import { Container } from './styles';
+ import './Colab.css';
 
 function Colab() {
-  return <h1>Colaborações</h1>;
+  return (
+    <h1>Colab</h1>
+  )
 }
 
 export default Colab;
