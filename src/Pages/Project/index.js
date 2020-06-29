@@ -1,54 +1,57 @@
 import React, { useEffect, useState } from 'react';
-//import { useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import InfoContainer from '../../Components/InfoContainer';
 import TagsWrap from '../../Components/TagsWrap';
-import { project } from '../../assets/temp/post.js';
+import apiPortfolio from '../../services/apiPortfolio';
 
 import './Project.css';
 
 function Project() {
 
     const [ post, setPost ] = useState({});
-    //const { id } = useParams();
-
+    const { id } = useParams();
 
     useEffect(() => {
-        setPost(project)
-    }, [])
+        (async () =>{
+            const { data } = await apiPortfolio.get(`projects/${id}`);
+            setPost(data);
+        })()
+    }, [id])
 
 
     return (
         <section className="containerProject">
-            <InfoContainer
+             <InfoContainer
                 title={post.title}
                 text={post.description}
             />
 
             <InfoContainer
                 subtitle="tecnologias"
-            />
+            /> 
 
-            <div className="projectTagWrap">
-                <TagsWrap tags={project.tags}/>
+             <div className="projectTagWrap">
+                <TagsWrap tags={post.tags}/>
             </div>
 
 
             {
-                project.postagem.map((postagem)=> (
+                post.posts &&
+                post.posts.map((postagem)=> (
                     <div key={postagem.id}>
-                    <InfoContainer
-                        
-                        subtitle={postagem.subtitle}
-                    />
-                    {
-                        postagem.interpost.map(inter => (
-                            <InfoContainer
-                                key={inter.id}
-                                text={inter.paragraph}
-                                images={inter.image}
-                            />  
-                        ))
-                    }
+                        <InfoContainer
+                            subtitle={postagem.subtitle}
+                            text={postagem.paragraph}
+                            images={postagem.images.map(image => 
+                                {
+                                    return{
+                                        title: image.title,
+                                        subtitle: image.subtitle,
+                                        image: `${process.env.REACT_APP_BACKEND_URL}${image.image.url}`
+                                    }
+                                }
+                            )}
+                        />
                     </div>
                 ))
             }

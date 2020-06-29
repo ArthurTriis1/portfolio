@@ -2,7 +2,7 @@ import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import './InfoContainer.css';
 import ImageSpan from '../ImageSpan';
-import celulari from '../../assets/temp/hackathon.png'
+
 
 function InfoContainer({ title, text, subtitle, images}) {
     return (
@@ -30,7 +30,7 @@ function InfoContainer({ title, text, subtitle, images}) {
                         key={index}
                         title={image.title}
                         subtitle={image.subtitle}
-                        image={celulari}
+                        image={image.image}
                     />
                 ))
             }

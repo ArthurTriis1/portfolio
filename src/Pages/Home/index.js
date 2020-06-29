@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Home.css';
 import PostSpan from '../../Components/PostSpan';
-import { projects } from '../../assets/temp/post.js';
+import apiPortfolio from '../../services/apiPortfolio';
 
 
 
@@ -10,7 +10,10 @@ function Home() {
     const [ posts, setPosts ] = useState([])
 
     useEffect(() => {
-        setPosts(projects);
+        (async () =>{
+            const { data } = await apiPortfolio.get("projects");
+            setPosts(data);
+        })()
     }, [])
 
 
@@ -19,8 +22,9 @@ function Home() {
             {
                 posts.map((post, index)=> (
                     <PostSpan 
+                        id={post.id}
                         key={index}
-                        image={post.image} 
+                        image={`${process.env.REACT_APP_BACKEND_URL}${post.image.url}`} 
                         tags={post.tags} 
                         title={post.title} 
                         description={post.description}
