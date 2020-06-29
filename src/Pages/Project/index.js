@@ -59,7 +59,7 @@ function Project() {
             <div className="accessWrap">
                 {post.access && <a href={post.access} >Acessar Projeto</a>}
 
-                {post.repository && <a href={post.repository} >Repositório</a>}
+                {post.repository && <a href={post.repository} >Repositório Front-End</a>}
             </div>
 
         </section>
