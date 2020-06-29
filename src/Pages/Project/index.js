@@ -47,7 +47,7 @@ function Project() {
                                     return{
                                         title: image.title,
                                         subtitle: image.subtitle,
-                                        image: `${process.env.REACT_APP_BACKEND_URL}${image.image.url}`
+                                        image: image.image.url
                                     }
                                 }
                             )}

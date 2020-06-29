@@ -24,7 +24,7 @@ function Home() {
                     <PostSpan 
                         id={post.id}
                         key={index}
-                        image={`${process.env.REACT_APP_BACKEND_URL}${post.image.formats.medium.url}`} 
+                        image={post.image.formats.medium.url} 
                         tags={post.tags} 
                         title={post.title} 
                         description={post.description}

@@ -29,7 +29,7 @@ function Colab() {
                         <ColabSpan
                             key={colab.id}
                             href={colab.link}
-                            image={`${process.env.REACT_APP_BACKEND_URL}${colab.image.formats.small.url}`}
+                            image={colab.image.formats.small.url}
                             title={colab.title}
                             type={colab.description}
                         />
