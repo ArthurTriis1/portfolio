@@ -8,7 +8,7 @@ function About() {
             <InfoContainer
             title="Sobre"
             text={
-`Estudante de Análise e Desenvolvimento de Sistemas no IFPE, focado no desenvolvimento Web e Mobile. Interessado em conhecer tecnologias tanto consolidadas, quanto recentes no mercado, e por em prática esses conhecimentos em projetos reais onde atuo desenvolvendo principalmente o front-end, mas tenho colaboração ativa na definição do projeto, passando pelo no back-end, até o deploy. Participo de diversas atividades de pesquisa e desenvolvimento na instituição, meetups, hackathons e eventos em geral na comunidade.`}
+`Sou estudante de Análise e Desenvolvimento de Sistemas no IFPE, focado no desenvolvimento Web e Mobile. Me interesso em conhecer tecnologias tanto consolidadas quanto recentes no mercado. Ponho em prática esses conhecimentos em projetos reais, onde atuo desenvolvendo principalmente o front-end, mas tenho colaboração ativa na definição do projeto:  passando pelo back-end até o deploy. Participo de diversas atividades de pesquisa e desenvolvimento na instituição, além de meetups, hackathons e eventos em geral na comunidade.`}
             />
 
             <InfoContainer
@@ -32,6 +32,7 @@ function About() {
 
 ### Habilidades back-end:
 - Node.js, Express
+- Strapi CMS
 - Mysql, Postgres e Postgis
 
 
@@ -40,7 +41,9 @@ function About() {
 - Terminal Linux
 - ESlint e Prettier
 - VScode, Netbeans e Eclipse
-- Deploy continuo no netlify de front-end e back-end (servless)
+- Deploy continuo no Netlify
+- Deploy continuo no Heroku
+
 
 `}
             />
