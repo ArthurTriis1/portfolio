@@ -19,12 +19,13 @@ function Home() {
 
     return (
         <section className="containerHome">
-            {
+            {   
+                posts &&
                 posts.map((post, index)=> (
                     <PostSpan 
                         id={post.id}
                         key={index}
-                        image={post.image.formats.medium.url} 
+                        image={post.image.formats.medium ? post.image.formats.medium.url : post.image.url} 
                         tags={post.tags} 
                         title={post.title} 
                         description={post.description}
