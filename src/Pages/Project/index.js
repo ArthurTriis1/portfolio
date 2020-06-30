@@ -57,9 +57,12 @@ function Project() {
             }
 
             <div className="accessWrap">
-                {post.access && <a href={post.access} >Acessar Projeto</a>}
-
-                {post.repository && <a href={post.repository} >Repositório Front-End</a>}
+                {
+                    post.links &&
+                    post.links.map(link => (
+                        <a key={link.id} href={link.link} >{link.title}</a>
+                    ))
+                }
             </div>
 
         </section>
