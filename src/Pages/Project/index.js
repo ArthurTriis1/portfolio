@@ -25,20 +25,23 @@ function Project() {
                 title={post.title}
                 text={post.description}
             />
+            {
+            post.tags &&
+            <>
+                <InfoContainer
+                    subtitle="tecnologias"
+                /> 
 
-            <InfoContainer
-                subtitle="tecnologias"
-            /> 
-
-             <div className="projectTagWrap">
-                <TagsWrap tags={post.tags}/>
-            </div>
-
+                <div className="projectTagWrap">
+                    <TagsWrap tags={post.tags}/>
+                </div>
+            </>
+            }
 
             {
                 post.posts &&
                 post.posts.map((postagem)=> (
-                    <div key={postagem.id}>
+                    <div key={postagem.id} style={{width: "100%"}}>
                         <InfoContainer
                             subtitle={postagem.subtitle}
                             text={postagem.paragraph}
@@ -60,6 +63,7 @@ function Project() {
                 {
                     post.links &&
                     post.links.map(link => (
+                        link.title &&
                         <a key={link.id} href={link.link} >{link.title}</a>
                     ))
                 }

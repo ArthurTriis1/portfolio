@@ -96,7 +96,9 @@
 .Sidebar a:hover{
     text-shadow: 0px 0px 10px;
     text-decoration: none;
+    color: #FED605;
 }
+
 
 .btClose{
     position: absolute;

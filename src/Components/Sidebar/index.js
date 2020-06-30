@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import group from '../../assets/images/sidebar/background.png';
 
-import { AiFillGithub, AiFillInstagram, AiOutlineMenu, AiFillCloseCircle,  AiOutlineArrowUp} from 'react-icons/ai'
+import { AiFillGithub, AiFillInstagram, AiOutlineMenu, AiFillLinkedin, AiFillCloseCircle,  AiOutlineArrowUp} from 'react-icons/ai'
 import { NavLink } from 'react-router-dom';
 import './Sidebar.css';
 
@@ -68,6 +68,9 @@ function Sidebar({photo}) {
                 </a>
                 <a href="https://www.instagram.com/kikikiiing/">
                     <AiFillInstagram/>
+                </a>
+                <a href="https://www.linkedin.com/in/arthur-andrade-30047818b/">
+                    <AiFillLinkedin/>
                 </a>
             </section>
             <section className="selectPages">
