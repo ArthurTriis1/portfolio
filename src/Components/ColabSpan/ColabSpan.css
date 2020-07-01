@@ -44,7 +44,7 @@
 }
 
 
-.colabSpanWrap:hover .imageColab{
+.clicked:hover .imageColab{
     width: 160px;
     min-width: 160px;
     height: 160px;
@@ -52,6 +52,11 @@
     border: 5px solid #FED605;
 }
 
-.colabSpanWrap:hover{
+.clicked:hover{
     cursor: pointer;
+}
+
+.colabSpanWrap svg{
+    font-size: 15px;
+    margin-left: 3px;
 }

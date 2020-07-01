@@ -11,7 +11,7 @@ function Home() {
 
     useEffect(() => {
         (async () =>{
-            const { data } = await apiPortfolio.get("projects");
+            const { data } = await apiPortfolio.get("projects?_sort=priority:DESC&show=true");
             setPosts(data);
         })()
     }, [])
