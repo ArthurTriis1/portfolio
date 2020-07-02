@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import InfoContainer from '../../Components/InfoContainer';
 import TagsWrap from '../../Components/TagsWrap';
 import apiPortfolio from '../../services/apiPortfolio';
+import Loading from '../../Components/Loading';
 
 import './Project.css';
 
@@ -10,17 +11,26 @@ function Project() {
 
     const [ post, setPost ] = useState({});
     const { id } = useParams();
+    const [ loading, setLoading ] = useState(false);
+
 
     useEffect(() => {
         (async () =>{
+            setLoading(true)
             const { data } = await apiPortfolio.get(`projects/${id}`);
             setPost(data);
+            setLoading(false)
         })()
     }, [id])
 
 
     return (
         <section className="containerProject">
+            {
+                loading &&
+                <Loading/>
+
+            }
              <InfoContainer
                 title={post.title}
                 text={post.description}
