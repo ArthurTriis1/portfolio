@@ -34,7 +34,7 @@ function Home() {
                                     }
                                 }`}
                             )
-            console.log(projects)
+            //console.log(projects)
             //const { data } = await apiPortfolio.get("projects?_sort=priority:DESC&show=true");
             setPosts(projects);
             setLoading(false)
