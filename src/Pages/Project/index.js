@@ -4,6 +4,7 @@ import InfoContainer from '../../Components/InfoContainer';
 import TagsWrap from '../../Components/TagsWrap';
 import apiPortfolio from '../../services/apiPortfolio';
 import Loading from '../../Components/Loading';
+//import axios from 'axios'
 
 import './Project.css';
 
@@ -17,8 +18,40 @@ function Project() {
     useEffect(() => {
         (async () =>{
             setLoading(true)
-            const { data } = await apiPortfolio.get(`projects/${id}`);
-            setPost(data);
+            const {data: {data : { project }}} = await apiPortfolio.post("graphql", {
+                query: `{
+                project(id:"${id}"){
+                    title
+                    description
+                    posts{
+                      id
+                      subtitle
+                      paragraph
+                      images{
+                        title
+                        subtitle
+                        image{
+                          url
+                        }
+                      }
+                    }
+                    image{
+                      url
+                    }
+                    links{
+                      title
+                      link
+                      id
+                    }
+                    tags{
+                      name
+                      color
+                    }
+                  }
+                }`
+            })
+            //const { data } = await apiPortfolio.get(`projects/${id}`);
+            setPost(project);
             setLoading(false)
         })()
     }, [id])
