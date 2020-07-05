@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import group from '../../assets/images/sidebar/background.png';
+import sun from '../../assets/images/sidebar/sun.png';
 
 import { AiFillGithub, AiFillInstagram, AiOutlineMenu, AiFillLinkedin, AiFillCloseCircle,  AiOutlineArrowUp} from 'react-icons/ai'
 import { NavLink } from 'react-router-dom';
@@ -52,6 +53,7 @@ function Sidebar({photo}) {
             <AiOutlineMenu className="iconMenu" onClick={() => setShowMenu(true)}/>
             <h3 className="navTitle">Arthur Andrade</h3>
             <h4 className="navSubtitle">Desenvolvedor Front End</h4>
+            <img src={sun} alt="Sol da bandeira de Pernambuco" className="iconSun"/>
         </nav>
         <aside className={`Sidebar ${showMenu && "ShowMenu"}`}>
             <AiFillCloseCircle className="btClose" onClick={() => setShowMenu(false)}/>
