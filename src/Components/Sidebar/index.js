@@ -79,7 +79,7 @@ function Sidebar({photo}) {
                 <NavLink to="/" exact activeStyle={{color: "#FED605"}} onClick={()=> setShowMenu(false)}>Home</NavLink>
                 <NavLink to="/about" exact activeStyle={{color: "#FED605"}} onClick={()=> setShowMenu(false)}>Sobre</NavLink>
                 <NavLink to="/colab" exact activeStyle={{color: "#FED605"}} onClick={()=> setShowMenu(false)}>Colab</NavLink>
-                <a href="curriculo">Currículo</a>
+                <a href="https://docs.google.com/document/d/1DfYhDTgFIdP46p0WP6-tKpwmPswzU7m-avQ5sxIKX44/edit">Currículo</a>
             </section>
         </aside>
         </>
