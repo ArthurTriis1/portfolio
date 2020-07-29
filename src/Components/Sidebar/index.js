@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import group from '../../assets/images/sidebar/background.png';
 import sun from '../../assets/images/sidebar/sun.png';
 
-import { AiFillGithub, AiFillInstagram, AiOutlineMenu, AiFillLinkedin, AiFillCloseCircle,  AiOutlineArrowUp} from 'react-icons/ai'
+import { AiFillGithub, AiFillInstagram, AiOutlineMenu, AiFillLinkedin, AiFillCloseCircle,  AiOutlineArrowUp, AiOutlineMedium} from 'react-icons/ai'
 import { NavLink } from 'react-router-dom';
 import './Sidebar.css';
 
@@ -73,6 +73,9 @@ function Sidebar({photo}) {
                 </a>
                 <a href="https://www.linkedin.com/in/arthur-andrade-30047818b/">
                     <AiFillLinkedin/>
+                </a>
+                <a href="https://medium.com/@arthurfelandrade/">
+                    <AiOutlineMedium/>
                 </a>
             </section>
             <section className="selectPages">
