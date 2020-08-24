@@ -3,23 +3,23 @@
   "name": "Portfólio de Arthur Andrade",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "star.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "star.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "star.png",
       "type": "image/png",
       "sizes": "512x512"
     }
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#114E9F",
+  "background_color": "#114E9F"
 }
